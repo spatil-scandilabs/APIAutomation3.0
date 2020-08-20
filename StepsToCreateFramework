@@ -1,0 +1,16 @@
+Steps for creating Cucumber BDD Framework: 
+
+- Create Maven Project 
+- Select maven-archetype-quickstart framework while creating project
+- Download Cucumber Java Maven dependency 
+- Always use io.cucumber group while downloading the dependencies
+- Download the latest version i.e.6.2.0 and copy the dependency to the pom file of the project
+- Go to the same page, scroll down the page and select io.cucumber » cucumber-junit jars of same version like 6.2.0
+- Copy the same jars to the pom file of the project
+- Enter the Rest Assured on the maven website and download the latest stable version of the jars
+- Make sure that the jars are from io.rest-assured group
+- Go to jackson-databind on the maven site and download and copy the latest version of jars to the pom file
+- Create feature package which includes all the feature files of the project 
+- Create stepDefinitions package which includes all the stepDefinitions files of the project 
+- Install Natural plugin from the eclipse marketplace into the project to support the feature files for the project 
+- 

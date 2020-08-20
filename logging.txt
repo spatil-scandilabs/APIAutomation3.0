@@ -1,0 +1,217 @@
+Request method:	POST
+Request URI:	https://payo-alpha.madakethealth.com/services/api/authtoken
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	apikey=abilitykey1
+				apisecret=abilitykey2
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Date: Thu, 20 Aug 2020 15:13:40 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx/1.16.1
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=B52931AEAED9E9EC4D2F5D8E32F366BD; Path=/enroll-api-services; Secure; HttpOnly
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Encoding: gzip
+
+{
+    "apitoken": "ZmM2NzdmNGEyZDdjM2ZlOWY3NThjYzgyNWIyY2QwNWJmNzkyYjU5NDU3ODlmYzlkZTQwYWY1YjgxODg1MjU5YQ"
+}
+Request method:	POST
+Request URI:	https://payo-alpha.madakethealth.com/services/api/v3.0/partners/ABILITY/sites
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		auth_id=abilitykey1
+				auth_token=ZmM2NzdmNGEyZDdjM2ZlOWY3NThjYzgyNWIyY2QwNWJmNzkyYjU5NDU3ODlmYzlkZTQwYWY1YjgxODg1MjU5YQ
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "000 Test Site Name",
+    "siteId": "9VRSRU"
+}
+HTTP/1.1 201 
+Date: Thu, 20 Aug 2020 15:13:41 GMT
+Content-Type: application/json
+Content-Length: 34
+Connection: keep-alive
+Server: nginx/1.16.1
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=39858B6BB60A34161407A542D38BB238; Path=/enroll-api-services; Secure; HttpOnly
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+
+{
+    "siteId": "9VRSRU",
+    "success": true
+}
+Request method:	POST
+Request URI:	https://payo-alpha.madakethealth.com/services/api/v3.0/partners/ABILITY/sites
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		auth_id=abilitykey1
+				auth_token=ZmM2NzdmNGEyZDdjM2ZlOWY3NThjYzgyNWIyY2QwNWJmNzkyYjU5NDU3ODlmYzlkZTQwYWY1YjgxODg1MjU5YQ
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "000 Test Site Name",
+    "siteId": null
+}
+HTTP/1.1 412 
+Date: Thu, 20 Aug 2020 15:13:41 GMT
+Content-Type: application/json;charset=ISO-8859-1
+Content-Length: 324
+Connection: keep-alive
+Server: nginx/1.16.1
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=EC0A93CB4A833CE50B20C7B0CC5C1191; Path=/enroll-api-services; Secure; HttpOnly
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Language: en-US
+
+{
+    "error": {
+        "businessErrors": [
+            {
+                "businessErrorKey": "JSON_ELEMENT_MISSING",
+                "message": "JSON element missing 'Required field 'siteId' is missing'"
+            }
+        ],
+        "httpReturnCode": 412,
+        "message": "1 failure condition: JSON element missing 'Required field 'siteId' is missing'"
+    },
+    "returnedResults": 0,
+    "success": false,
+    "totalPages": 0,
+    "totalResults": 0
+}
+Request method:	POST
+Request URI:	https://payo-alpha.madakethealth.com/services/api/v3.0/partners/ABILITY/sites
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		auth_id=abilitykey1
+				auth_token=ZmM2NzdmNGEyZDdjM2ZlOWY3NThjYzgyNWIyY2QwNWJmNzkyYjU5NDU3ODlmYzlkZTQwYWY1YjgxODg1MjU5YQ
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": null,
+    "siteId": "CVYFJC"
+}
+HTTP/1.1 412 
+Date: Thu, 20 Aug 2020 15:13:42 GMT
+Content-Type: application/json;charset=ISO-8859-1
+Content-Length: 320
+Connection: keep-alive
+Server: nginx/1.16.1
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=A1B6FEA49D7EC85C8B119F1F378082EA; Path=/enroll-api-services; Secure; HttpOnly
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Language: en-US
+
+{
+    "error": {
+        "businessErrors": [
+            {
+                "businessErrorKey": "JSON_ELEMENT_MISSING",
+                "message": "JSON element missing 'Required field 'name' is missing'"
+            }
+        ],
+        "httpReturnCode": 412,
+        "message": "1 failure condition: JSON element missing 'Required field 'name' is missing'"
+    },
+    "returnedResults": 0,
+    "success": false,
+    "totalPages": 0,
+    "totalResults": 0
+}
+Request method:	POST
+Request URI:	https://payo-alpha.madakethealth.com/services/api/v3.0/partners/TRIZETTO/sites
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		auth_id=abilitykey1
+				auth_token=ZmM2NzdmNGEyZDdjM2ZlOWY3NThjYzgyNWIyY2QwNWJmNzkyYjU5NDU3ODlmYzlkZTQwYWY1YjgxODg1MjU5YQ
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "000 Test Site Name",
+    "siteId": "FFLOTS"
+}
+HTTP/1.1 404 
+Date: Thu, 20 Aug 2020 15:13:42 GMT
+Content-Type: application/json;charset=ISO-8859-1
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx/1.16.1
+Vary: Accept-Encoding
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=25373E55F5CCB8EDAC402AD40C8C6538; Path=/enroll-api-services; Secure; HttpOnly
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Language: en-US
+Content-Encoding: gzip
+
+{
+    "error": {
+        "businessErrors": [
+            {
+                "businessErrorKey": "PARTNER_MISSING",
+                "message": "Partner not found."
+            }
+        ],
+        "httpReturnCode": 404,
+        "message": "1 failure condition: Partner not found."
+    },
+    "returnedResults": 0,
+    "success": false,
+    "totalPages": 0,
+    "totalResults": 0
+}

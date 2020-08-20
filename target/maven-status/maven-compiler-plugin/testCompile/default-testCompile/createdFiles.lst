@@ -1,0 +1,5 @@
+cucumberBdd/Api3/AutomationFramework/AppTest.class
+cucumber/Options/TestRunner.class
+payLoads/BaseUriParameters.class
+payLoads/GenerateTokenApi.class
+stepDefinations/StepDefination.class

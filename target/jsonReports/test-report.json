@@ -1,0 +1,636 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-20T15:13:36.775Z",
+        "line": 3,
+        "name": "Verify correct auth token is being created",
+        "description": "",
+        "id": "generate-and-validate-authentication-token;verify-correct-auth-token-is-being-created",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2054000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Generate token Paylod",
+            "match": {
+              "location": "stepDefinations.StepDefinationToken.generate_token_paylod()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 64000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls Generate Token API with POST https request",
+            "match": {
+              "location": "stepDefinations.StepDefinationToken.user_calls_generate_token_api_with_post_https_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 471000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call should be sucessfull with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 51
+                }
+              ],
+              "location": "stepDefinations.StepDefinationToken.the_api_call_should_be_sucessfull_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "response body should have apitoken",
+            "match": {
+              "location": "stepDefinations.StepDefinationToken.response_body_should_have_apitoken()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Generate and validate Authentication Token",
+    "description": "",
+    "id": "generate-and-validate-authentication-token",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/authToken.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-20T15:13:36.838Z",
+        "line": 3,
+        "name": "Verify correct Site is being created",
+        "description": "",
+        "id": "create-new-site-and-releted-testcases;verify-correct-site-is-being-created",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4065992000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "\"Add Site\" Paylod",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add Site\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.paylod(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 480981000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls \"AddSite\" API with \"POST\" https request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddSite\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.user_calls_api_with_https_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1944000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call should return response with status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.the_api_call_should_return_response_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11476000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"success\" in response body is \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"success\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"true\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17389000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "response body should have created \"siteId\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"siteId\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.response_body_should_have_created(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-20T15:13:41.435Z",
+        "line": 11,
+        "name": "Verify create Site API with invalid JSON element Site Id",
+        "description": "",
+        "id": "create-new-site-and-releted-testcases;verify-create-site-api-with-invalid-json-element-site-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2484000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "\"Add Site\" Paylod with invalid Json element Site Id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add Site\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.paylod_with_invalid_json_element_site_id(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 271524000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user calls \"AddSite\" API with \"POST\" https request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddSite\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.user_calls_api_with_https_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 126000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the API call should return response with status code 412",
+            "match": {
+              "arguments": [
+                {
+                  "val": "412",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.the_api_call_should_return_response_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8753000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "API request should be unsuccessful with \"success\" in response body \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"success\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"false\"",
+                  "offset": 67
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.api_request_should_be_unsuccessful_with_in_response_body(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21155000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "response body should have \"businessErrorKey\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"businessErrorKey\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.response_body_should_have(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[[JSON_ELEMENT_MISSING]]\u003e but was:\u003c[JSON_ELEMENT_MISSING]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat stepDefinations.stepDefinationSite.business_error_key_in_error_response_is(stepDefinationSite.java:228)\n\tat ✽.businessErrorKey in error response is \"JSON_ELEMENT_MISSING\"(file:///Users/shirishpatil/madaket/eclipse/Api3.0AutomationFramework/src/test/java/features/sites.feature:17)\n",
+              "duration": 10192000,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "businessErrorKey in error response is \"JSON_ELEMENT_MISSING\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JSON_ELEMENT_MISSING\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.business_error_key_in_error_response_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "message in error response is \"JSON element missing \u0027Required field \u0027siteId\u0027 is missing\u0027\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JSON element missing \u0027Required field \u0027siteId\u0027 is missing\u0027\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.message_in_error_response_is(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-20T15:13:41.781Z",
+        "line": 21,
+        "name": "Verify create Site API with invalid JSON element Site Name",
+        "description": "",
+        "id": "create-new-site-and-releted-testcases;verify-create-site-api-with-invalid-json-element-site-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4166000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "\"Add Site\" Paylod with invalid Json element Site Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add Site\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.paylod_with_invalid_json_element_site_name(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 273531000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user calls \"AddSite\" API with \"POST\" https request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddSite\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.user_calls_api_with_https_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 150000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the API call should return response with status code 412",
+            "match": {
+              "arguments": [
+                {
+                  "val": "412",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.the_api_call_should_return_response_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8938000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "API request should be unsuccessful with \"success\" in response body \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"success\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"false\"",
+                  "offset": 67
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.api_request_should_be_unsuccessful_with_in_response_body(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31034000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "response body should have \"businessErrorKey\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"businessErrorKey\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.response_body_should_have(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[[JSON_ELEMENT_MISSING]]\u003e but was:\u003c[JSON_ELEMENT_MISSING]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat stepDefinations.stepDefinationSite.business_error_key_in_error_response_is(stepDefinationSite.java:228)\n\tat ✽.businessErrorKey in error response is \"JSON_ELEMENT_MISSING\"(file:///Users/shirishpatil/madaket/eclipse/Api3.0AutomationFramework/src/test/java/features/sites.feature:27)\n",
+              "duration": 11123000,
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "businessErrorKey in error response is \"JSON_ELEMENT_MISSING\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JSON_ELEMENT_MISSING\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.business_error_key_in_error_response_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28000,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "message in error response is \"JSON element missing \u0027Required field \u0027name\u0027 is missing\u0027\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JSON element missing \u0027Required field \u0027name\u0027 is missing\u0027\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.message_in_error_response_is(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-20T15:13:42.115Z",
+        "line": 31,
+        "name": "Verify create Site API with different Partner",
+        "description": "",
+        "id": "create-new-site-and-releted-testcases;verify-create-site-api-with-different-partner",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3105000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "\"Add Site\" Paylod with different Partner information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add Site\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.paylod_with_different_partner_information(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 271741000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user calls \"AddSiteInvalidPartner\" API with \"POST\" https request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddSiteInvalidPartner\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.user_calls_api_with_https_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 293000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "the API call should return response with status code 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.the_api_call_should_return_response_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15960000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "API request should be unsuccessful with \"success\" in response body \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"success\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"false\"",
+                  "offset": 67
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.api_request_should_be_unsuccessful_with_in_response_body(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45213000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "response body should have \"businessErrorKey\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"businessErrorKey\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.response_body_should_have(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[[PARTNER_MISSING]]\u003e but was:\u003c[PARTNER_MISSING]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat stepDefinations.stepDefinationSite.business_error_key_in_error_response_is(stepDefinationSite.java:228)\n\tat ✽.businessErrorKey in error response is \"PARTNER_MISSING\"(file:///Users/shirishpatil/madaket/eclipse/Api3.0AutomationFramework/src/test/java/features/sites.feature:37)\n",
+              "duration": 9602000,
+              "status": "failed"
+            },
+            "line": 37,
+            "name": "businessErrorKey in error response is \"PARTNER_MISSING\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PARTNER_MISSING\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.business_error_key_in_error_response_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26000,
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "message in error response is \"JSON element missing \u0027Required field \u0027name\u0027 is missing\u0027\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JSON element missing \u0027Required field \u0027name\u0027 is missing\u0027\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinations.stepDefinationSite.message_in_error_response_is(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Create new Site and releted testcases",
+    "description": "",
+    "id": "create-new-site-and-releted-testcases",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/sites.feature",
+    "tags": []
+  }
+]
